@@ -26,6 +26,10 @@ p {
   margin: 20px;
 }
 
+article {
+  margin: 20px;
+}
+
 button {
   font-family: "Helvetica", sans-serif;
   font-weight: bold;
@@ -95,15 +99,61 @@ button {
   font-size: 14px;
 }
 
-.card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #007bff; /* Azul para links */
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+.meu-cabecalho {
+  background: linear-gradient(135deg, #00a859 0%, #007a4d 100%); /* Gradiente verde para mais profundidade */
+  padding: 30px 20px; /* Aumentei o padding vertical para mais espaço */
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Aumentei o gap para melhor separação */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
+  border-bottom: 3px solid #005a3a; /* Borda inferior para definir o cabeçalho */
 }
 
-.card a:hover {
-  color: #0056b3;
+.meu-cabecalho h1 {
+  margin: 0;                /* Remove margens que podem desalinhá-lo */
+  font-size: 48px; /* Aumentei o tamanho da fonte para mais impacto */
+  color: #ffffff; /* Mudei para branco para contrastar com o fundo verde */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para legibilidade */
+  font-weight: bold; /* Adicionei negrito para ênfase */
+}
+
+.menu-links {
+  background-color: #f1f1f1; 
+  border-top: 3px solid #8b4513;/* Fundo cinza claro igual da imagem */
+  border-bottom: 3px solid #8b4513; /* Linha marrom no topo (opcional) */
+  display: flex;
+  justify-content: flex-start; /* Alinha os links à esquerda */
+  padding: 0;
+}
+
+.menu-links ul {
+  list-style: none; /* Remove as bolinhas da lista */
+  margin: 10px 20px; /* Espaçamento externo da barra */
+  padding: 0;
+  display: flex;
+  background-color: #fff; /* Fundo branco dos botões */
+  border: 1px solid #ccc; /* Bordinha cinza ao redor */
+  border-radius: 8px;    /* Deixa as pontas arredondadas */
+  overflow: hidden;      /* Garante que o fundo não saia da borda arredondada */
+}
+
+.menu-links li {
+  border-right: 1px solid #1a1a1a; /* Linha divisória entre os itens */
+}
+
+.menu-links li:last-child {
+  border-right: none; /* Remove a linha do último item */
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #1a1a1a; /* Cor marrom avermelhada do texto */
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.menu-links a:hover {
+  background-color: #00AB4E; /* Muda levemente a cor ao passar o mouse */
 }
