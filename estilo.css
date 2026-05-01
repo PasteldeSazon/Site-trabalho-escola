@@ -1,28 +1,33 @@
 body {
-  background-image: url('capa-de-fundo-do-arquivo-principal.jpg');
+  background-image: url("capa-de-fundo-do-arquivo-principal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   color: #ffffff; /* Branco para contraste com fundo escuro */
 }
 
-h1, h2 {
-  font-family: 'Georgia', serif;
+h1,
+h2 {
+  font-family: "Georgia", serif;
   color: #ffffff; /* Branco */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para legibilidade */
+  margin: 20px;
 }
 
 p {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   color: #f0f0f0; /* Cinza claro */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px;
 }
 
 button {
-  font-family: 'Helvetica', sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -57,7 +62,12 @@ button {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.95); /* Branco quase opaco para contraste */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.95
+  ); /* Branco quase opaco para contraste */
   padding: 18px;
   border-radius: 12px;
   text-align: left;
