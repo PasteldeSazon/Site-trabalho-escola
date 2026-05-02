@@ -10,11 +10,26 @@ body {
 }
 
 h1,
-h2 {
+h2, h3 {
   font-family: "Georgia", serif;
   color: #ffffff; /* Branco */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para legibilidade */
   margin: 20px;
+}
+
+a {
+  color: #87CEEB; /* Azul claro para links */
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+li {
+  font-family: "Arial", sans-serif;
+  color: #f0f0f0; /* Cinza claro */
+  
+  font-size: 18px;
+  
 }
 
 p {
@@ -44,6 +59,13 @@ button {
   text-align: right;
   float: right;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+audio {
+  width: 100%;
+  max-width: 400px; /* Impede que ele fique gigante em telas grandes */
+  display: block;
+  margin: 20px auto; /* Centraliza e dá um respiro na letra */
 }
 
 .capa {
@@ -156,4 +178,59 @@ button {
 
 .menu-links a:hover {
   background-color: #00AB4E; /* Muda levemente a cor ao passar o mouse */
+}
+
+.rodape-divisao {
+  background-color: #1a1a1a; /* Cor escura para combinar com o site */
+  color: white;
+  padding: 30px;
+  display: flex;            /* Coloca as colunas lado a lado */
+  justify-content: space-around;
+  border-top: 3px solid #00a859; /* Aquela linha verde no topo */
+}
+
+.coluna {
+  flex: 1;                  /* Faz as 3 colunas terem o mesmo tamanho */
+  padding: 0 20px;
+  text-align: center;       /* Centraliza o texto de cada parte */
+}
+
+/* Adiciona a linha vertical APENAS entre as colunas */
+.coluna + .coluna {
+  border-left: 1px solid #444; 
+}
+
+.coluna h4 {
+  margin-bottom: 15px;
+  color: #00a859;           /* Títulos em verde */
+}
+
+.coluna a {
+  color: #87CEEB;
+  text-decoration: none;
+}
+
+/* --- RESPONSIVIDADE (CELULAR) --- */
+
+@media (max-width: 768px) {
+  .conteudo-musica {
+    flex-direction: column-reverse; /* Inverte a ordem no celular */
+    align-items: center;
+  }
+
+  .card-musica {
+    width: 95%; /* Expande o player no celular */
+    margin-bottom: 20px;
+  }
+
+  .rodape-divisao {
+    flex-direction: column;
+  }
+
+  .coluna + .coluna {
+    border-left: none;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
 }
