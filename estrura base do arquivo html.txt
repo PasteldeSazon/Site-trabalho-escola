@@ -1,28 +1,22 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Código</title>
-</head>
-<body>
 <header class="meu-cabecalho">
       <h1>Tche Musics - Um site sobre as musicas gauchas que eu ouço</h1>
     </header>
     <nav class="menu-links">
       <ul>
-        
-        <li><a href="../index.html">Página Inicial</a></li>
-        <li><a href="documentação.html">Documentação do Site</a></li>
-        <li><a href="sobre nós.md">Sobre nós</a></li>
-        <li><a href="ferramentas utilizadas.html">Ferramentas Utilizadas</a></li>
-        <li><a href="código.html">Código do site</a></li>
-        <li><a href="../biografias/Home biografias.html">Biografias dos Cantores</a></li>
-      
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="paginas/documentação.html">Documentação</a></li>
+        <li><a href="paginas/sobre nós.html">Sobre nós</a></li>
+        <li><a href="paginas/ferramentas utilizadas.html">Ferramentas Utilizadas</a></li>
+        <li><a href="paginas/código.html">Código do site</a></li>
+        <li><a href="biografias/Home biografias.html">Biografias</a></li>
       </ul>
     </nav>
 
-    <footer class="rodape-divisao">
+
+
+
+
+<footer class="rodape-divisao">
       <div class="coluna">
         <h4>Contato:</h4>
         <address>
@@ -60,5 +54,3 @@
         <p><a href="index.html">Clique aqui</a></p>
       </div>
     </footer>
-</body>
-</html>
