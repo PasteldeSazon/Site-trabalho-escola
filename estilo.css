@@ -16,7 +16,7 @@ h2, h3 {
   font-family: "Georgia", serif;
   color: #ffffff; /* Branco */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para legibilidade */
-  margin: 20px;
+  margin: 10px; /* Reduzido para ocupar mais espaço */
 }
 
 /* Estilos para links */
@@ -43,12 +43,12 @@ p {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   font-size: 18px;
   line-height: 1.6;
-  margin: 20px;
+  margin: 10px; /* Reduzido para ocupar mais espaço */
 }
 
 /* Estilos para elementos article */
 article {
-  margin: 20px;
+  margin: 10px; /* Reduzido para ocupar mais espaço */
 }
 
 /* Estilos para botões */
@@ -74,7 +74,7 @@ audio {
   width: 100%;
   max-width: 400px; /* Impede que ele fique gigante em telas grandes */
   display: block;
-  margin: 20px auto; /* Centraliza e dá um respiro na letra */
+  margin: 10px auto; /* Reduzido para ocupar mais espaço */
 }
 
 /* Estilos para capas de imagem */
@@ -87,15 +87,15 @@ audio {
 /* Estilos para a seção de projetos */
 #projetos {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 40px; /* Reduzido para ocupar mais espaço */
 }
 
 /* Estilos para a grade de projetos */
 .grade-projetos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  max-width: 1000px;
+  gap: 20px; /* Reduzido para ocupar mais espaço */
+  max-width: 1200px; /* Aumentado para ocupar mais largura */
   margin: 40px auto;
 }
 
@@ -107,7 +107,7 @@ audio {
     255,
     0.95
   ); /* Branco quase opaco para contraste */
-  padding: 18px;
+  padding: 25px; /* Aumentado para ocupar mais espaço */
   border-radius: 12px;
   text-align: left;
   transition: 0.25s;
@@ -141,7 +141,7 @@ audio {
 /* Estilos para o cabeçalho personalizado */
 .meu-cabecalho {
   background: linear-gradient(135deg, #00a859 0%, #007a4d 100%); /* Gradiente verde para mais profundidade */
-  padding: 30px 20px; /* Aumentei o padding vertical para mais espaço */
+  padding: 40px 20px; /* Aumentado para ocupar mais espaço */
   display: flex;
   align-items: center;
   gap: 15px; /* Aumentei o gap para melhor separação */
@@ -170,8 +170,11 @@ audio {
 
 /* Estilos para listas não ordenadas no menu */
 .menu-links ul {
+   width: 90%;
+  max-width: 900px;
+  margin: 10px auto;
   list-style: none; /* Remove as bolinhas da lista */
-  margin: 10px 20px; /* Espaçamento externo da barra */
+  
   padding: 0;
   display: flex;
   background-color: #fff; /* Fundo branco dos botões */
@@ -209,7 +212,7 @@ audio {
 .rodape-divisao {
   background-color: #1a1a1a; /* Cor escura para combinar com o site */
   color: white;
-  padding: 30px;
+  padding: 40px; /* Aumentado para ocupar mais espaço */
   display: flex;            /* Coloca as colunas lado a lado */
   justify-content: space-around;
   border-top: 3px solid #00a859; /* Aquela linha verde no topo */
@@ -247,7 +250,7 @@ audio {
   .meu-cabecalho {
     flex-direction: column; /* Empilha o título e outros elementos verticalmente */
     text-align: center; /* Centraliza o conteúdo */
-    padding: 20px 10px; /* Reduz o padding para economizar espaço */
+    padding: 25px 10px; /* Ajustado para ocupar espaço */
     gap: 10px; /* Reduz o gap */
   }
 
