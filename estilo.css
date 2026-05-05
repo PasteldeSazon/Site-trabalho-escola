@@ -12,7 +12,8 @@ body {
 
 /* Estilos para títulos principais (h1, h2, h3) */
 h1,
-h2, h3 {
+h2,
+h3 {
   font-family: "Georgia", serif;
   color: #ffffff; /* Branco */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para legibilidade */
@@ -21,10 +22,9 @@ h2, h3 {
 
 /* Estilos para links */
 a {
-  color: #87CEEB; /* Azul claro para links */
+  color: #87ceeb; /* Azul claro para links */
   text-decoration: none;
   font-weight: bold;
-
 }
 
 /* Estilos para itens de lista */
@@ -33,7 +33,6 @@ li {
   color: #f0f0f0; /* Cinza claro */
 
   font-size: 18px;
-
 }
 
 /* Estilos para parágrafos */
@@ -58,15 +57,41 @@ button {
   text-transform: uppercase;
 }
 
-/* Estilos para o cartão de música */
+.container-conteudo {
+  display: grid;
+  /* 1fr (espaço vazio) | auto (largura do texto) | 1fr (espaço do player) */
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
+  gap: 10px;
+  width: 100%;
+}
+
+.letra-centro {
+  grid-column: 2; /* Trava o texto na coluna do meio */
+  text-align: center;
+  max-width: 600px;
+  text-align: left; /* Texto alinhado à esquerda para facilitar a leitura */
+  margin: 0 auto; /* Centraliza o bloco na coluna */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.05); /* Um fundo bem sutil para destacar */
+}
+
+.letra-centro p {
+  font-size: 1.5rem; /* Letras um pouco maiores */
+  line-height: 1.8; /* Dá fôlego para a leitura */
+
+  font-family: "Segoe UI", sans-serif;
+}
+
 .card-musica {
-  background-color: rgba(255, 255, 255, 0.9); /* Branco translúcido */
+  grid-column: 3; /* Joga o player para a terceira coluna */
+  justify-self: end; /* Alinha o cartão totalmente à direita da coluna dele */
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 15px;
   border-radius: 15px;
   width: 300px;
-  text-align: right;
-  float: right;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-right: 20px; /* Margem da borda da tela */
 }
 
 /* Estilos para elementos de áudio */
@@ -140,7 +165,11 @@ audio {
 
 /* Estilos para o cabeçalho personalizado */
 .meu-cabecalho {
-  background: linear-gradient(135deg, #00a859 0%, #007a4d 100%); /* Gradiente verde para mais profundidade */
+  background: linear-gradient(
+    135deg,
+    #00a859 0%,
+    #007a4d 100%
+  ); /* Gradiente verde para mais profundidade */
   padding: 40px 20px; /* Aumentado para ocupar mais espaço */
   display: flex;
   align-items: center;
@@ -151,7 +180,7 @@ audio {
 
 /* Estilos para h1 dentro do cabeçalho */
 .meu-cabecalho h1 {
-  margin: 0;                /* Remove margens que podem desalinhá-lo */
+  margin: 0; /* Remove margens que podem desalinhá-lo */
   font-size: 48px; /* Aumentei o tamanho da fonte para mais impacto */
   color: #ffffff; /* Mudei para branco para contrastar com o fundo verde */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para legibilidade */
@@ -161,7 +190,7 @@ audio {
 /* Estilos para o menu de links */
 .menu-links {
   background-color: #f1f1f1;
-  border-top: 3px solid #8b4513;/* Fundo cinza claro igual da imagem */
+  border-top: 3px solid #8b4513; /* Fundo cinza claro igual da imagem */
   border-bottom: 3px solid #8b4513; /* Linha marrom no topo (opcional) */
   display: flex;
   justify-content: flex-start; /* Alinha os links à esquerda */
@@ -170,17 +199,17 @@ audio {
 
 /* Estilos para listas não ordenadas no menu */
 .menu-links ul {
-   width: 90%;
+  width: 90%;
   max-width: 900px;
   margin: 10px auto;
   list-style: none; /* Remove as bolinhas da lista */
-  
+
   padding: 0;
   display: flex;
   background-color: #fff; /* Fundo branco dos botões */
   border: 1px solid #ccc; /* Bordinha cinza ao redor */
-  border-radius: 8px;    /* Deixa as pontas arredondadas */
-  overflow: hidden;      /* Garante que o fundo não saia da borda arredondada */
+  border-radius: 8px; /* Deixa as pontas arredondadas */
+  overflow: hidden; /* Garante que o fundo não saia da borda arredondada */
 }
 
 /* Estilos para itens de lista no menu */
@@ -205,7 +234,7 @@ audio {
 
 /* Estilos para links no menu ao passar o mouse */
 .menu-links a:hover {
-  background-color: #00AB4E; /* Muda levemente a cor ao passar o mouse */
+  background-color: #00ab4e; /* Muda levemente a cor ao passar o mouse */
 }
 
 /* Estilos para a divisão do rodapé */
@@ -213,16 +242,16 @@ audio {
   background-color: #1a1a1a; /* Cor escura para combinar com o site */
   color: white;
   padding: 40px; /* Aumentado para ocupar mais espaço */
-  display: flex;            /* Coloca as colunas lado a lado */
+  display: flex; /* Coloca as colunas lado a lado */
   justify-content: space-around;
   border-top: 3px solid #00a859; /* Aquela linha verde no topo */
 }
 
 /* Estilos para colunas no rodapé */
 .coluna {
-  flex: 1;                  /* Faz as 3 colunas terem o mesmo tamanho */
+  flex: 1; /* Faz as 3 colunas terem o mesmo tamanho */
   padding: 0 20px;
-  text-align: center;       /* Centraliza o texto de cada parte */
+  text-align: center; /* Centraliza o texto de cada parte */
 }
 
 /* Adiciona a linha vertical APENAS entre as colunas */
@@ -233,12 +262,12 @@ audio {
 /* Estilos para títulos h4 nas colunas do rodapé */
 .coluna h4 {
   margin-bottom: 15px;
-  color: #00a859;           /* Títulos em verde */
+  color: #00a859; /* Títulos em verde */
 }
 
 /* Estilos para links nas colunas do rodapé */
 .coluna a {
-  color: #87CEEB;
+  color: #87ceeb;
   text-decoration: none;
 }
 
@@ -246,6 +275,21 @@ audio {
 
 /* Media query para telas menores que 768px (celulares) */
 @media (max-width: 768px) {
+  .container-conteudo {
+    display: flex;
+    flex-direction: column-reverse; /* Player em cima, texto embaixo */
+    align-items: center;
+  }
+
+  .card-musica {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+
+  .letra-centro {
+    width: 100%;
+  }
+
   /* Ajusta o cabeçalho para telas pequenas: empilha elementos verticalmente e reduz tamanho da fonte */
   .meu-cabecalho {
     flex-direction: column; /* Empilha o título e outros elementos verticalmente */
