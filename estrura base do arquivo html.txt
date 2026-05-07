@@ -13,12 +13,6 @@
     </nav>
 
 
-<div class="container-conteudo">
-      <section class="letra-centro">
-
-       </section>
-
-       </div>
 
 
 <footer class="rodape-divisao">
@@ -54,8 +48,23 @@
         </p>
       </div>
 
+<div class="link-significado-mobile">
+    <a href="link do arquivo .html">Clique aqui para ver o significado da letra</a>
+</div>
+<br>
+<aside id="secao-significado" class="significado-musica">
+    <h3>O que diz a letra?</h3>
+    </aside>
+
       <div class="coluna">
         <h4>Voltar para o começo da página</h4>
         <p><a href="index.html">Clique aqui</a></p>
       </div>
     </footer>
+    
+    <div class="container-conteudo">
+      <section class="letra-centro">
+
+       </section>
+
+       </div>

@@ -83,6 +83,27 @@ button {
   font-family: "Segoe UI", sans-serif;
 }
 
+.significado-musica {
+    background-color: #007a4d;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    position: absolute; /* Faz flutuar */
+    left: 20px;         /* Cola na esquerda */
+    top: 250px;         /* Alinha com o início da letra */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    color: #333;
+    font-size: 0.9em;
+    line-height: 1.5;
+    z-index: 10;
+    top: 295px;
+}
+
+.significado-musica h3 {
+    margin-top: 0;
+    color: #8b4513;
+    border-bottom: 2px solid #8b4513;
+}
 .card-musica {
   grid-column: 3; /* Joga o player para a terceira coluna */
   justify-self: end; /* Alinha o cartão totalmente à direita da coluna dele */
@@ -92,6 +113,7 @@ button {
   width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   margin-right: 20px; /* Margem da borda da tela */
+  margin-top: 39px;
 }
 
 /* Estilos para elementos de áudio */
@@ -100,6 +122,7 @@ audio {
   max-width: 400px; /* Impede que ele fique gigante em telas grandes */
   display: block;
   margin: 10px auto; /* Reduzido para ocupar mais espaço */
+  
 }
 
 /* Estilos para capas de imagem */
@@ -107,6 +130,7 @@ audio {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
+ 
 }
 
 /* Estilos para a seção de projetos */
@@ -271,6 +295,11 @@ audio {
   text-decoration: none;
 }
 
+/* Esconde o link de significado no computador */
+.link-significado-mobile {
+  display: none;
+}
+
 /* --- RESPONSIVIDADE (CELULAR) --- */
 
 /* Media query para telas menores que 768px (celulares) */
@@ -286,10 +315,29 @@ audio {
     margin-bottom: 20px;
   }
 
+  .significado-musica {
+    display: none; /* Isso faz a caixa verde sumir no celular */
+  }
+
   .letra-centro {
     width: 100%;
   }
 
+  .link-significado-mobile {
+    display: block; /* Faz o link aparecer apenas no celular */
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .link-significado-mobile a {
+    background-color: #8b4513; /* O marrom que você queria */
+    color: white !important;   /* Força o branco para não ficar azul */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+  }
   /* Ajusta o cabeçalho para telas pequenas: empilha elementos verticalmente e reduz tamanho da fonte */
   .meu-cabecalho {
     flex-direction: column; /* Empilha o título e outros elementos verticalmente */
