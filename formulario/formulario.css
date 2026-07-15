@@ -1,0 +1,155 @@
+html,
+body {
+  min-height: 100%;
+}
+
+.formulario-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.formulario-erro {
+  color: red;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+.moldura {
+  width: min(760px, 100%);
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  color: #1f2937;
+}
+
+.itens {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.itens br {
+  display: none;
+}
+
+label,
+.itens span {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid #cbd5e1;
+  background-color: #f8fafc;
+  color: #0f172a;
+  font-size: 1rem;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #2563eb;
+}
+
+.itens input[type="radio"] + label {
+  display: inline-block;
+  margin-right: 18px;
+  font-weight: 400;
+  color: #334155;
+}
+
+/* Grupo de checkboxes: cada checkbox fica junto do texto e alinhado */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+  text-align: start;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 100px;
+  font-weight: 400;
+  color: #334155;
+  justify-content: center;
+  text-align: left;
+}
+
+
+
+button {
+  width: 100%;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 14px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.2);
+}
+
+.radio {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"] {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .formulario-container {
+    min-height: auto;
+    padding: 24px 12px;
+  }
+
+  .moldura {
+    padding: 24px;
+  }
+}

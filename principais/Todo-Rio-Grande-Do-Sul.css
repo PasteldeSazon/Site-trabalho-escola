@@ -1,0 +1,413 @@
+/* ============================================
+   ESTILOS PARA A PÁGINA RIO GRANDE DO SUL
+   PALETA: Cores Oficiais da Bandeira do RS
+   Verde #00AB4E | Vermelho #EE302F | Grafite #212121
+   ============================================ */
+
+/* Wrapper principal com fundo branco */
+body > div {
+  background: #ffffff;
+  color: #212121;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Títulos principais com GREEN (cor oficial) */
+.titulo-principal {
+  color: #00AB4E;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 40px 20px 30px 20px;
+  padding: 20px 0;
+  border-bottom: 4px solid #00AB4E;
+  text-shadow: none;
+  letter-spacing: 0.5px;
+}
+
+/* Caixas de informação - Verde oficial */
+.info-box {
+  background: linear-gradient(135deg, #E8F7F0 0%, #F0F9F6 100%);
+  border-left: 6px solid #00AB4E;
+  border-radius: 8px;
+  padding: 25px;
+  margin: 25px 20px;
+  box-shadow: 0 4px 12px rgba(0, 171, 78, 0.15);
+}
+
+.info-box p {
+  color: #212121;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.info-box strong {
+  color: #00AB4E;
+  font-weight: 700;
+}
+
+/* Tabelas - Com verde e vermelho da bandeira */
+.tabela-dados {
+  width: calc(100% - 40px);
+  border-collapse: collapse;
+  margin: 30px 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.tabela-dados th,
+.tabela-dados td {
+  padding: 16px;
+  text-align: left;
+  border: none;
+}
+
+.tabela-dados thead tr {
+  background: linear-gradient(135deg, #00AB4E 0%, #008A3D 100%);
+}
+
+.tabela-dados th {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tabela-dados tbody tr {
+  border-bottom: 1px solid #ecf0f1;
+  transition: all 0.3s ease;
+}
+
+.tabela-dados tbody tr:hover {
+  background-color: #E8F7F0;
+  box-shadow: inset 4px 0 0 #EE302F;
+}
+
+.tabela-dados tbody tr:nth-child(even) {
+  background-color: #F8F9F8;
+}
+
+.tabela-dados td {
+  color: #212121;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.tabela-dados td strong {
+  color: #00AB4E;
+  font-weight: 700;
+}
+
+/* Imagens com efeito */
+.imagem-destaque {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  border: 2px solid #E8F7F0;
+}
+
+.imagem-destaque:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 28px rgba(0, 171, 78, 0.2);
+}
+
+/* Layout com duas colunas */
+.coluna-dupla {
+  display: flex;
+  gap: 30px;
+  margin: 30px 20px;
+  align-items: center;
+}
+
+.coluna-dupla > div {
+  flex: 1;
+}
+
+.coluna-dupla p {
+  color: #212121;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 15px 0;
+}
+
+.coluna-dupla strong {
+  color: #00AB4E;
+  font-weight: 700;
+}
+
+/* Caixas de destaque - Verde e Vermelho */
+.box-destaque {
+  background: linear-gradient(135deg, #E8F7F0 0%, #F0F9F6 100%);
+  border: 3px solid #00AB4E;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px 20px;
+  box-shadow: 0 6px 16px rgba(0, 171, 78, 0.15);
+}
+
+.box-destaque h4 {
+  color: #00AB4E;
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00AB4E;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+.box-destaque p {
+  color: #212121;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 15px 0;
+}
+
+.box-destaque ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.box-destaque li {
+  color: #212121;
+  font-size: 16px;
+  margin: 12px 0;
+  line-height: 1.8;
+}
+
+/* Listas gerais - melhor contraste */
+ul, ol {
+  padding-left: 30px;
+  margin: 20px 0;
+}
+
+li {
+  color: #212121;
+  font-size: 16px;
+  margin: 10px 0;
+  line-height: 1.8;
+}
+
+li strong {
+  color: #00AB4E;
+  font-weight: 700;
+}
+
+/* Parágrafos */
+p {
+  color: #212121;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 15px 20px;
+}
+
+/* Subtítulos - Verde Oficial */
+h3 {
+  color: #00AB4E;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 30px 20px 15px 20px;
+  border-bottom: 2px solid #00AB4E;
+  padding-bottom: 10px;
+}
+
+h4 {
+  color: #008A3D;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 20px 20px 15px 20px;
+}
+
+/* Links - Com cor verde e vermelho da bandeira */
+a {
+  color: #00AB4E;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+/* a:hover {
+  color: #EE302F;
+  border-bottom: 2px solid #EE302F;
+  text-decoration: none;
+} */
+
+/* Estilos adicionais para o bloco de fontes integrado */
+.secao-fontes {
+  margin-top: 30px !important;
+  border-left: 6px solid #EE302F; /* Destaca a seção usando o vermelho oficial */
+}
+
+.lista-fontes-rs {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.lista-fontes-rs li {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #cbd5e1;
+}
+
+.lista-fontes-rs li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.lista-fontes-rs strong {
+  color: #212121;
+}
+
+.lista-fontes-rs em {
+  color: #00AB4E; /* Destaca as instituições com o verde oficial */
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* ============================================
+   RESPONSIVIDADE PARA MOBILE
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .coluna-dupla {
+    gap: 20px;
+    margin: 20px 15px;
+  }
+
+  .titulo-principal {
+    font-size: 1.8rem;
+    margin: 30px 15px 20px 15px;
+  }
+
+  .info-box,
+  .box-destaque {
+    margin: 20px 15px;
+    padding: 20px;
+  }
+
+  .tabela-dados {
+    width: calc(100% - 30px);
+    margin: 20px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Layout responsivo */
+  .coluna-dupla {
+    flex-direction: column;
+    gap: 15px;
+    margin: 15px 10px;
+  }
+
+  /* Títulos responsivos */
+  .titulo-principal {
+    font-size: 1.5rem;
+    margin: 20px 10px 15px 10px;
+    padding: 15px 0;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    margin: 20px 10px 10px 10px;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    margin: 15px 10px;
+  }
+
+  /* Caixas responsivas */
+  .info-box,
+  .box-destaque {
+    margin: 15px 10px;
+    padding: 15px;
+  }
+
+  .box-destaque h4 {
+    font-size: 1.2rem;
+  }
+
+  /* Tabelas responsivas */
+  .tabela-dados {
+    width: calc(100% - 20px);
+    margin: 15px 10px;
+    font-size: 14px;
+  }
+
+  .tabela-dados th,
+  .tabela-dados td {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  /* Texto responsivo */
+  p, li {
+    font-size: 15px;
+    margin: 10px 10px;
+  }
+
+  .tabela-dados td {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Títulos muito responsivos */
+  .titulo-principal {
+    font-size: 1.3rem;
+    margin: 15px 8px 10px 8px;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin: 15px 8px 8px 8px;
+  }
+
+  h4 {
+    font-size: 1rem;
+    margin: 12px 8px;
+  }
+
+  /* Caixas muito responsivas */
+  .info-box,
+  .box-destaque {
+    margin: 12px 8px;
+    padding: 12px;
+  }
+
+  /* Tabelas muito responsivas */
+  .tabela-dados {
+    width: calc(100% - 16px);
+    margin: 12px 8px;
+    font-size: 12px;
+  }
+
+  .tabela-dados th,
+  .tabela-dados td {
+    padding: 8px;
+    font-size: 11px;
+  }
+
+  /* Texto muito responsivo */
+  p, li {
+    font-size: 13px;
+    margin: 8px 8px;
+  }
+
+  .coluna-dupla {
+    margin: 10px 8px;
+    gap: 10px;
+  }
+}
