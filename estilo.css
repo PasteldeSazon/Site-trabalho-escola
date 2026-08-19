@@ -57,6 +57,22 @@ button {
   text-transform: uppercase;
 }
 
+.texto-main{
+  align-items: center;
+  margin: 2%;
+  
+}
+
+.texto-main p {
+  font-size: 20px;
+}
+
+.duas-coluna {
+  column-count: 2; /* Número de colunas */
+column-gap: 20px; /* Espaçamento entre as colunas */
+column-rule: 2px solid #000; /* Linha entre as colunas */
+}
+
 .container-conteudo {
   display: grid;
   /* 1fr (espaço vazio) | auto (largura do texto) | 1fr (espaço do player) */
